@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style rel="stylesheet" type="text/css">
+            header{
+              overflow: hidden;
+            } 
+            header>h1{
+                float: left;
+            }
+            header>form{
+                float: right;
+            }
+            header>form>*{
+                text-align: right;
+                margin: 0px;
+            }
+            header>form>p{
+                font-size: 0.8em;
+                font-style: italic;
+            }
+            nav{
+                height: 40px;
+                background-color: darkgray;
+            }
+            nav>ul{
+                list-style: none;
+                padding: 0px;
+                width: 360px;
+                margin: 0px auto;
+                overflow: hidden;
+            }
+            nav>ul>li{
+                width: 100px;
+                float: left;
+                margin: 0px 10px;
+                height: 40px;
+            }
+            nav>ul>li:hover{
+                height: 175px;
+            }
+            nav>ul>li>a{
+                display: block;
+                height: 40px;
+                background-color: gray;
+                text-align: center;
+                line-height: 40px;
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            nav>ul>li>ol{
+                list-style: none;
+                padding: 0px;
+            }
+            nav>ul>li>ol>li>a{
+                position: relative;
+                display: block;
+                height: 40px;
+                border-top: 5px solid white;
+                background-color: gray;
+                text-align: center;
+                text-decoration: none;
+                line-height: 40px;
+                color: white;
+                font-weight: bold;
+            }
+            footer{
+                text-align: center;
+                margin-top: 100px;
+                background-color: darkgrey;
+                padding: 50px 0px;
+            }
+            #loopImg{
+                width: 600px;
+                height: 200px;
+                overflow: hidden;
+                margin: 0px auto;
+            }
+            #loopImg>ul{
+                list-style: none;
+                padding: 0px;
+                width: 4200px;
+                animation-name: looping;
+                animation-duration: 12s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            }
+            #loopImg>ul>li{
+                float: left;
+            }
+            @keyframes looping{
+                from{margin-left: 0px;}
+                to{margin-left: -3600px;}
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <header>
+                <h1>비트교육센터</h1>
+                <form>
+                    id<input type="text"/>
+                    pw<input type="password"/>
+                    <button>login</button>
+                    <p>처음 오시는 분은 <a href="#">이곳</a>으로 먼저 가입 바랍니다</p>
+                </form>
+            </header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">MENU1</a>
+                        <ol>
+                            <li><a href="#">MENU1-1</a></li>
+                            <li><a href="#">MENU1-2</a></li>
+                            <li><a href="#">MENU1-3</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">MENU2</a>
+                        <ol>
+                            <li><a href="#">MENU2-1</a></li>
+                            <li><a href="#">MENU2-2</a></li>
+                            <li><a href="#">MENU2-3</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">MENU3</a>
+                        <ol>
+                            <li><a href="#">MENU3-1</a></li>
+                            <li><a href="#">MENU3-2</a></li>
+                            <li><a href="#">MENU3-3</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <section>
+                <h2>헌법내용</h2>
+                <p>형사피해자는 법률이 정하는 바에 의하여 당해 사건의 재판절차에서 진술할 수 있다. 정부는 회계연도마다 예산안을 편성하여 회계연도 개시 90일전까지 국회에 제출하고, 국회는 회계연도 개시 30일전까지 이를 의결하여야 한다.</p>
+                <p>정기회의 회기는 100일을, 임시회의 회기는 30일을 초과할 수 없다. 법률이 정하는 주요방위산업체에 종사하는 근로자의 단체행동권은 법률이 정하는 바에 의하여 이를 제한하거나 인정하지 아니할 수 있다.</p>
+                <p>이 헌법공포 당시의 국회의원의 임기는 제1항에 의한 국회의 최초의 집회일 전일까지로 한다. 정당은 법률이 정하는 바에 의하여 국가의 보호를 받으며, 국가는 법률이 정하는 바에 의하여 정당운영에 필요한 자금을 보조할 수 있다.</p>
+                <div id="loopImg">
+                    <ul>
+                        <li><img src="https://dummyimage.com/600x200/000/fff&text=image1"/></li>
+                        <li><img src="https://dummyimage.com/600x200/000/fff&text=image2"/></li>
+                        <li><img src="https://dummyimage.com/600x200/000/fff&text=image3"/></li>
+                        <li><img src="https://dummyimage.com/600x200/000/fff&text=image4"/></li>
+                        <li><img src="https://dummyimage.com/600x200/000/fff&text=image5"/></li>
+                        <li><img src="https://dummyimage.com/600x200/000/fff&text=image6"/></li>
+                        <li><img src="https://dummyimage.com/600x200/000/fff&text=image1"/></li>
+                    </ul>
+                </div>
+            </section>
+            <aside></aside>
+            <footer>
+                <address>서울특별시 서초구 서초대로74길33 비트빌 3층</address>
+                Copyright by bitacademy co.ltd. All rights reserved
+            </footer>
+        </div>
+    </body>
+</html>
