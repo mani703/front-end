@@ -31,7 +31,7 @@
                 console.log('box1');
             });
             box2.addEventListener('click', function(e){
-                // e.stopPropagation();    // 이벤트 전파금지
+                e.stopPropagation();    // 이벤트 전파금지
                 console.log('box2');
             });
             box3.addEventListener('click', function(e){
