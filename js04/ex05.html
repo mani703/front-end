@@ -29,15 +29,15 @@
             box3 = document.querySelectorAll('div')[2];
             box1.addEventListener('click', function(){
                 console.log('box1');
-            }, true);
+            });
             box2.addEventListener('click', function(e){
-                e.stopPropagation();    // 이벤트 전파금지
+                // e.stopPropagation();    // 이벤트 전파금지
                 console.log('box2');
-            }, true);
+            });
             box3.addEventListener('click', function(e){
                 // e.stopPropagation();    // 이벤트 전파금지
                 console.log('box3');
-            }, true);
+            });
         };
     </script>
     <title>Document</title>
