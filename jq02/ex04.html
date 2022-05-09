@@ -8,7 +8,11 @@
     <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript">
         $(function(){
-            $('a')
+            $('button').on('click dblclick', function(){
+                console.log(e.type);
+                return false;
+            });
+            $('button')
                 .click(function(e){
                     // e.preventDefault();     // 엘리먼트 고유 이벤트 취소
                     console.log('클릭', this, e.target, e.pageX, e.pageY, e.clientX, e.clientY);
