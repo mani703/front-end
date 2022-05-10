@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            // $('#target').load('ex07.jsp', 'name=admin', function(a, b, c){
+            //     console.log(typeof a);
+            // });
+            // $.get('ex07.jsp', function(a, b, c){
+            //     // console.log(a, b, c)
+            //     $('#target').html($('#target').html(a).find('h2'));
+            // });
+            // $.get('ex08.xml', function(a, b, c){
+            //     $(a).find('row').each(function(idx, ele){
+            //         $('#target').append('<div>' + $(ele).children().first().html() + '</div>');
+            //     });
+            // });
+            // $.get('ex09.json', function(a, b, c){
+            //     $(a.root).each(function(idx, ele){
+            //         $('<div/>').text(ele.key2).appendTo('#target');
+            //     });
+            // });
+            $.getJSON('ex09.jsp', function(a, b, c){
+                $(a.root).each(function(idx, ele){
+                    $('<div/>').text(ele.key2).appendTo('#target');
+                });
+            })
+        });
+    </script>
+</head>
+<body>
+    <h1>ajax</h1>
+    <div id="target"></div>
+</body>
+</html>
+
